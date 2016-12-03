@@ -1,0 +1,6 @@
+- name: botnet
+  link: "https://github.com/monk1229/botnet"
+  description: "Proof of concept botnet client/server. Written in python3."
+- name: whatodo
+  link: "https://github.com/masterkoppa/whatodo"
+  description: "Tool to help keep track of TODO and FIX me in code. Part of BrickHack 2015."

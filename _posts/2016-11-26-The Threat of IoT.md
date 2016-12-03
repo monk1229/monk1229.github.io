@@ -1,0 +1,140 @@
+![Internet-of-Things-Needs-IPv6-566x500.png](/assets/img/Internet-of-Things-Needs-IPv6-566x500.png)
+[Credit](http://teamarin.net/2013/12/27/connected-devices-accelerate-the-need-for-ipv6-in-the-internet-of-things/)
+
+## Introduction
+
+In light of recent events with the attack on Dyn and others, the Internet of
+Things is making itself known and is becoming a source of great concern. The
+Internet of Things or IoT is the collection of small, cheap, disposable devices
+that connect to the Internet. The FTC [defines](http://arstechnica.com/tech-policy/2015/01/who-watches-the-watchers-ftc-issues-official-report-on-the-internet-of-things/) the Internet of Things as "any
+gadgets or sensors that transmit information about the owner over an
+Internet connection—excluding gadgets like computers, smartphones,
+or tablets". Examples of gadgets range from industrial to everyday objects
+and include both inanimate and living things.
+
+For example home security cameras, these are useful tools used by many
+people to monitor their homes both inside and out. More recently fitness
+bands like Nike+ Fuel and Fitbit are becoming useful. These help you to
+monitor and track your fitness activities and health. Other connected
+devices like baby monitors, pacemakers and appliances are also very
+useful and can make everyday life easier and provide nice comforts
+unavailable before.
+
+There is one important thing in common with all these devices, they all
+either are connected to the Internet or have wireless capabilities like
+WiFi, Bluetooth or other networking technologies. This opens them to at
+least temporary access to outside devices or networks. Collectively these
+devices are known as the [Internet of Things](http://www.cisco.com/c/dam/en_us/solutions/trends/iot/introduction_to_IoT_november.pdf).
+However these devices could also be exploited by others and used for
+nefarious reasons.
+
+
+![IoTSearchEngineShodanLaunchesNewWebcamImageFeed-2-2.jpg](/assets/img/IoTSearchEngineShodanLaunchesNewWebcamImageFeed-2-2.jpg)
+[Credit](https://www.shodan.io/host/111.39.88.62)
+
+An example of these potential nefarious uses is [Shodon](https://www.shodan.io/).
+Shodon allows anyone to browse through camera feeds that have been left open
+and unprotected by their primary user. The reasons they are unprotected could
+be poor default settings or misconfiguration. This is just one of the more
+visible examples of the emerging problems within the IoT.
+
+## Potential for Concern
+Individually these devices can be used to gather information on people and
+other small hacking tasks to a greater extent than people realize. Like in
+the example above, people might not realize what kind of information they’re
+exposing to the outside world. What you can see with your security cameras so can
+they. How you monitor your everyday activities so can they. While the privacy
+implications here are huge, this is minor compared to the potential for damage
+these devices have when exploited in large enough numbers.
+
+![botnet-graph.jpg](/assets/img/botnet-graph.jpg)
+[Credit](http://resources.infosecinstitute.com/estonia-to-black-out-an-entire-country-part-one/)
+
+The potential threat IoT devices poses for the world’s Internet infrastructure
+may now be something to consider and something that might require monitoring.
+These threats come primarily in the form of Distributed Denial of Service or
+DDoS attacks. By [definition](https://www.wired.com/2016/01/hacker-lexicon-what-are-dos-and-ddos-attacks/)
+a DDoS attack is "an attack that overwhelms a system with data—most commonly a
+flood of simultaneous requests sent to a website to view its pages, causing the
+web server to crash or simply become inoperable as it struggles to respond to
+more requests than it can handle".
+
+One recent major DDoS attack was conducted on Dyn. Dyn is a major DNS service
+provider, serving customers like Twitter, Github and Netflix. This caused
+outages across the Internet for services who depended on Dyn or it’s customers.
+This was unprecedented for a DDoS originating from IoT devices. It is suspected
+that the malware behind this attack and others like it is Mirai.
+
+[Mirai](https://krebsonsecurity.com/2016/10/hacked-cameras-dvrs-powered-todays-massive-internet-outage/)
+works by "scouring the Web for IoT devices protected by little more
+than factory-default usernames and passwords, and then enlists the devices in
+attacks that hurl junk traffic at an online target until it can no longer
+accommodate legitimate visitors or users". The Mirai attack has brought the
+concern of IoT devices to the forefront. It also gave us a view into how future
+attacks might leverage the IoT to cause further damage. The source code for
+Mirai is available on [Github](https://github.com/James-Gallagher/Mirai) for
+further examination.
+
+## Problematic security in IoT
+
+![broken-lock.jpg](/assets/img/broken-lock.jpg)
+[Credit](http://www.bitcointalkradio.com/is-bitcoin-mining-figure-joshua-zipkin-responsible-for-the-bitcointalk-hack/)
+
+While there is no one single party that can be blamed for the rise in
+threats in the Internet of Things, both manufacturers and consumers play
+a role.
+
+These security flaws can come from the consumer using the devices to the
+manufacturers themselves. Some examples of errors made by consumers are the
+use of weak firewalls, retaining [default security settings](http://arstechnica.com/information-technology/2016/10/inside-the-machine-uprising-how-cameras-dvrs-took-down-parts-of-the-internet/) like access codes,
+usernames or passwords. In most cases though even if the usernames and
+passwords are changed these tend to be [weak](http://arstechnica.com/security/2014/04/how-new-malware-is-making-the-internet-of-things-the-windows-xp-of-2014/)
+and [easy](https://krebsonsecurity.com/2016/10/hacked-cameras-dvrs-powered-todays-massive-internet-outage/)
+to figure out, these devices can still usually be reached through connections
+that are not very user friendly like Telnet and SSH. Most customers are
+unaware of these capabilities. Another vulnerability found on the consumer
+end is leaving DNS proxies open to the Internet.
+
+From the manufacturers side of things, the scenery isn’t much better. The
+most prominent issue is one of software updates. Most of these devices are
+of limited capabilities for user interaction, most of the time invisible
+or out of the mind of the user. This makes any potential update mechanisms
+hard to implement. Additionally the low cost of most of these devices leaves
+the manufacturer with little option but to abandon support for the device
+and develop a new device to sell with updated software instead. So for
+these manufacturers there is really no incentive to provide software updates
+that include fixes to security vulnerabilities or other improvements. The
+vulnerability gets larger because while people are purchasing the newer
+version there are lots of the [older ones](http://arstechnica.com/unite/2015/10/the-future-is-the-internet-of-things-deal-with-it/)
+around and they may still be connected to the Internet. Another large problem
+from the manufacturers is the inability to change settings like usernames or
+passwords. This leaves customers with no protection [even if they sought](http://arstechnica.com/information-technology/2016/10/inside-the-machine-uprising-how-cameras-dvrs-took-down-parts-of-the-internet/)
+it out themselves. These vulnerabilities helped to make the Mirai attack on
+Dyn and others a success.
+
+## Moving Forward
+A good step forward would be the establishment of a set of potential
+guidelines for manufacturers to follow. One such set of guidelines that they
+can follow and is recommended to do so by it’s author the FTC. These
+guidelines suggest employee training on the importance of security,
+prioritized security through the design process, and providing constant
+security updates to devices. These are just a few of the suggestions but
+these could [put us further](http://arstechnica.com/tech-policy/2015/01/who-watches-the-watchers-ftc-issues-official-report-on-the-internet-of-things/) ahead in the current situation.
+
+I different industry group known as “I Am The Cavalry” has [proposed](http://arstechnica.com/security/2016/01/how-to-search-the-internet-of-things-for-photos-of-sleeping-babies/) their
+own suggestion that being a rating system that is based off requirements like
+"No default passwords shared between devices, or weak out of the box
+passwords." and  "Communication between devices should be encrypted to
+prevent MitM attacks and sniffing/snooping." While to some of us in the
+computer security industry see these requirements as common sense, it is
+clear that IoT manufactures do not see these things as common sense or
+necessary for some reason.
+
+If we do not act however the consequences will be devastating and it’s
+potential threat will continue to grow more every day. Those who use the
+IoT to conduct their work go unchecked. As the number of devices that
+are included in the IoT increases, the capabilities of both the devices
+and the Internet make this threat even larger. What the future holds is
+what we as consumers, manufacturers, and government decide to do from
+this point on. The situation could either get gravely worse, or improve. We
+will just have to see what happens.

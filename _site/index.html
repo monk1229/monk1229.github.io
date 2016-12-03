@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title>Monika Mckeown</title>
+    <meta name="description" content="Senior student in Computer Security / Imaging Science at RIT">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Monika Mckeown">
+    <meta itemprop="name" content="Monika Mckeown">
+
+    <meta property="og:url" content="http://localhost:4000" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Monika Mckeown" />
+    <meta property="og:description" content="Senior student in Computer Security / Imaging Science at RIT" />
+    <meta property="og:image" content="http://localhost:4000/images/favicon.png" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content=" "lukashimsel" " />
+    <meta name="twitter:title" content="Monika Mckeown" />
+    <meta name="twitter:description" content="Senior student in Computer Security / Imaging Science at RIT" />
+    <meta name="twitter:image" content="http://localhost:4000/images/favicon.png" />
+
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM feed">
+    <link href="/feed.xml" type="application/rss+xml" rel="alternate" title="RSS feed">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/gridism.css">
+    <link rel="stylesheet" href="/assets/css/ionicons.css">    
+    <style>
+        .blog-column{
+            background: #fff8a9;
+        }
+    </style>
+</head>
+
+<body class="wrap wider">
+	<div class="grid">
+		<div id="/home" class="unit one-third">
+			<div class="grid">
+				<div class="unit whole" id="/home">
+					<h1>Monika Mckeown</h1>
+					<p>Senior student in Computer Security / Imaging Science at RIT</p>
+				</div>
+				<div class="unit whole" id="/contact">
+					<a href="https://github.com/monk1229" class="github-icon btn"><i class="icon ion-social-github"></i></a>
+					<a href="mailto:mam1229@rit.edu" class="mail-icon btn"><i class="icon ion-email"></i></a>
+					<a href="feed.xml" class="rss-icon btn"><i class="icon ion-social-rss"></i></a>
+				</div>
+				<div class="unit whole hide-on-mobiles" id="/projects">
+					<h4>Projects</h4>
+<ul>
+    
+    <li>
+      <p><a href="https://github.com/monk1229/botnet">botnet</a><br><small>Proof of concept botnet client/server. Written in python3.</small></p>
+    </li>
+    
+    <li>
+      <p><a href="https://github.com/masterkoppa/whatodo">whatodo</a><br><small>Tool to help keep track of TODO and FIX me in code. Part of BrickHack 2015.</small></p>
+    </li>
+    
+</ul>
+				</div>
+				<div class="unit whole hide-on-mobiles" id="/impressum">
+					<h4>Contact</h4>
+<ul>
+    <li>
+        <p>Rochester, NY<br><small>Address</small></p>
+    </li>
+    <li>
+        <p>mam1229@rit.edu<br><small>Email</small></p>
+    </li>
+    
+</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="unit two-thirds blog-column">
+			<div class="grid">
+				<div class="unit whole" id="/blog">
+					<h1>Blog</h1>
+				</div>
+				
+<div id="2016-11-26-00" class="unit whole align-left post">
+	<article itemscope itemtype="http://schema.org/BlogPosting">
+		<h2>The threat of iot<br>
+		<small class="chip">Nov 26, 2016</small>
+		<a class="chip" href="https://twitter.com/intent/tweet?text=The+threat+of+iot&url=http%3A%2F%2Flocalhost%3A4000%232016-11-26-00"><i class="icon ion-social-twitter"></i> TWEET</a>
+		<a class="chip" href="http://localhost:4000#2016-11-26-00"><i class="icon ion-android-share-alt"></i> LINK</a>
+		</h2>
+		
+		<div class="post-content">
+			<p><img src="/assets/img/Internet-of-Things-Needs-IPv6-566x500.png" alt="Internet-of-Things-Needs-IPv6-566x500.png" />
+<a href="http://teamarin.net/2013/12/27/connected-devices-accelerate-the-need-for-ipv6-in-the-internet-of-things/">Credit</a></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In light of recent events with the attack on Dyn and others, the Internet of
+Things is making itself known and is becoming a source of great concern. The
+Internet of Things or IoT is the collection of small, cheap, disposable devices
+that connect to the Internet. The FTC <a href="http://arstechnica.com/tech-policy/2015/01/who-watches-the-watchers-ftc-issues-official-report-on-the-internet-of-things/">defines</a> the Internet of Things as “any
+gadgets or sensors that transmit information about the owner over an
+Internet connection—excluding gadgets like computers, smartphones,
+or tablets”. Examples of gadgets range from industrial to everyday objects
+and include both inanimate and living things.</p>
+
+<p>For example home security cameras, these are useful tools used by many
+people to monitor their homes both inside and out. More recently fitness
+bands like Nike+ Fuel and Fitbit are becoming useful. These help you to
+monitor and track your fitness activities and health. Other connected
+devices like baby monitors, pacemakers and appliances are also very
+useful and can make everyday life easier and provide nice comforts
+unavailable before.</p>
+
+<p>There is one important thing in common with all these devices, they all
+either are connected to the Internet or have wireless capabilities like
+WiFi, Bluetooth or other networking technologies. This opens them to at
+least temporary access to outside devices or networks. Collectively these
+devices are known as the <a href="http://www.cisco.com/c/dam/en_us/solutions/trends/iot/introduction_to_IoT_november.pdf">Internet of Things</a>.
+However these devices could also be exploited by others and used for
+nefarious reasons.</p>
+
+<p><img src="/assets/img/IoTSearchEngineShodanLaunchesNewWebcamImageFeed-2-2.jpg" alt="IoTSearchEngineShodanLaunchesNewWebcamImageFeed-2-2.jpg" />
+<a href="https://www.shodan.io/host/111.39.88.62">Credit</a></p>
+
+<p>An example of these potential nefarious uses is <a href="https://www.shodan.io/">Shodon</a>.
+Shodon allows anyone to browse through camera feeds that have been left open
+and unprotected by their primary user. The reasons they are unprotected could
+be poor default settings or misconfiguration. This is just one of the more
+visible examples of the emerging problems within the IoT.</p>
+
+<h2 id="potential-for-concern">Potential for Concern</h2>
+<p>Individually these devices can be used to gather information on people and
+other small hacking tasks to a greater extent than people realize. Like in
+the example above, people might not realize what kind of information they’re
+exposing to the outside world. What you can see with your security cameras so can
+they. How you monitor your everyday activities so can they. While the privacy
+implications here are huge, this is minor compared to the potential for damage
+these devices have when exploited in large enough numbers.</p>
+
+<p><img src="/assets/img/botnet-graph.jpg" alt="botnet-graph.jpg" />
+<a href="http://resources.infosecinstitute.com/estonia-to-black-out-an-entire-country-part-one/">Credit</a></p>
+
+<p>The potential threat IoT devices poses for the world’s Internet infrastructure
+may now be something to consider and something that might require monitoring.
+These threats come primarily in the form of Distributed Denial of Service or
+DDoS attacks. By <a href="https://www.wired.com/2016/01/hacker-lexicon-what-are-dos-and-ddos-attacks/">definition</a>
+a DDoS attack is “an attack that overwhelms a system with data—most commonly a
+flood of simultaneous requests sent to a website to view its pages, causing the
+web server to crash or simply become inoperable as it struggles to respond to
+more requests than it can handle”.</p>
+
+<p>One recent major DDoS attack was conducted on Dyn. Dyn is a major DNS service
+provider, serving customers like Twitter, Github and Netflix. This caused
+outages across the Internet for services who depended on Dyn or it’s customers.
+This was unprecedented for a DDoS originating from IoT devices. It is suspected
+that the malware behind this attack and others like it is Mirai.</p>
+
+<p><a href="https://krebsonsecurity.com/2016/10/hacked-cameras-dvrs-powered-todays-massive-internet-outage/">Mirai</a>
+works by “scouring the Web for IoT devices protected by little more
+than factory-default usernames and passwords, and then enlists the devices in
+attacks that hurl junk traffic at an online target until it can no longer
+accommodate legitimate visitors or users”. The Mirai attack has brought the
+concern of IoT devices to the forefront. It also gave us a view into how future
+attacks might leverage the IoT to cause further damage. The source code for
+Mirai is available on <a href="https://github.com/James-Gallagher/Mirai">Github</a> for
+further examination.</p>
+
+<h2 id="problematic-security-in-iot">Problematic security in IoT</h2>
+
+<p><img src="/assets/img/broken-lock.jpg" alt="broken-lock.jpg" />
+<a href="http://www.bitcointalkradio.com/is-bitcoin-mining-figure-joshua-zipkin-responsible-for-the-bitcointalk-hack/">Credit</a></p>
+
+<p>While there is no one single party that can be blamed for the rise in
+threats in the Internet of Things, both manufacturers and consumers play
+a role.</p>
+
+<p>These security flaws can come from the consumer using the devices to the
+manufacturers themselves. Some examples of errors made by consumers are the
+use of weak firewalls, retaining <a href="http://arstechnica.com/information-technology/2016/10/inside-the-machine-uprising-how-cameras-dvrs-took-down-parts-of-the-internet/">default security settings</a> like access codes,
+usernames or passwords. In most cases though even if the usernames and
+passwords are changed these tend to be <a href="http://arstechnica.com/security/2014/04/how-new-malware-is-making-the-internet-of-things-the-windows-xp-of-2014/">weak</a>
+and <a href="https://krebsonsecurity.com/2016/10/hacked-cameras-dvrs-powered-todays-massive-internet-outage/">easy</a>
+to figure out, these devices can still usually be reached through connections
+that are not very user friendly like Telnet and SSH. Most customers are
+unaware of these capabilities. Another vulnerability found on the consumer
+end is leaving DNS proxies open to the Internet.</p>
+
+<p>From the manufacturers side of things, the scenery isn’t much better. The
+most prominent issue is one of software updates. Most of these devices are
+of limited capabilities for user interaction, most of the time invisible
+or out of the mind of the user. This makes any potential update mechanisms
+hard to implement. Additionally the low cost of most of these devices leaves
+the manufacturer with little option but to abandon support for the device
+and develop a new device to sell with updated software instead. So for
+these manufacturers there is really no incentive to provide software updates
+that include fixes to security vulnerabilities or other improvements. The
+vulnerability gets larger because while people are purchasing the newer
+version there are lots of the <a href="http://arstechnica.com/unite/2015/10/the-future-is-the-internet-of-things-deal-with-it/">older ones</a>
+around and they may still be connected to the Internet. Another large problem
+from the manufacturers is the inability to change settings like usernames or
+passwords. This leaves customers with no protection <a href="http://arstechnica.com/information-technology/2016/10/inside-the-machine-uprising-how-cameras-dvrs-took-down-parts-of-the-internet/">even if they sought</a>
+it out themselves. These vulnerabilities helped to make the Mirai attack on
+Dyn and others a success.</p>
+
+<h2 id="moving-forward">Moving Forward</h2>
+<p>A good step forward would be the establishment of a set of potential
+guidelines for manufacturers to follow. One such set of guidelines that they
+can follow and is recommended to do so by it’s author the FTC. These
+guidelines suggest employee training on the importance of security,
+prioritized security through the design process, and providing constant
+security updates to devices. These are just a few of the suggestions but
+these could <a href="http://arstechnica.com/tech-policy/2015/01/who-watches-the-watchers-ftc-issues-official-report-on-the-internet-of-things/">put us further</a> ahead in the current situation.</p>
+
+<p>I different industry group known as “I Am The Cavalry” has <a href="http://arstechnica.com/security/2016/01/how-to-search-the-internet-of-things-for-photos-of-sleeping-babies/">proposed</a> their
+own suggestion that being a rating system that is based off requirements like
+“No default passwords shared between devices, or weak out of the box
+passwords.” and  “Communication between devices should be encrypted to
+prevent MitM attacks and sniffing/snooping.” While to some of us in the
+computer security industry see these requirements as common sense, it is
+clear that IoT manufactures do not see these things as common sense or
+necessary for some reason.</p>
+
+<p>If we do not act however the consequences will be devastating and it’s
+potential threat will continue to grow more every day. Those who use the
+IoT to conduct their work go unchecked. As the number of devices that
+are included in the IoT increases, the capabilities of both the devices
+and the Internet make this threat even larger. What the future holds is
+what we as consumers, manufacturers, and government decide to do from
+this point on. The situation could either get gravely worse, or improve. We
+will just have to see what happens.</p>
+
+		</div>
+
+		
+
+	</article>
+</div>
+
+
+				<div class="unit whole" id="/subscribe">
+					<p><a href="feed.xml">RSS</a> & <a href="atom.xml">ATOM</a> Feed<br>Built with Jekyll, Code on <a href="https://github.com/lukas-h/onepage">Github</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="unit whole hide-on-desktops" id="/projects">
+			<h4>Projects</h4>
+<ul>
+    
+    <li>
+      <p><a href="https://github.com/monk1229/botnet">botnet</a><br><small>Proof of concept botnet client/server. Written in python3.</small></p>
+    </li>
+    
+    <li>
+      <p><a href="https://github.com/masterkoppa/whatodo">whatodo</a><br><small>Tool to help keep track of TODO and FIX me in code. Part of BrickHack 2015.</small></p>
+    </li>
+    
+</ul>
+		</div>
+		<div class="unit whole hide-on-desktops" id="/impressum">
+			<h4>Contact</h4>
+<ul>
+    <li>
+        <p>Rochester, NY<br><small>Address</small></p>
+    </li>
+    <li>
+        <p>mam1229@rit.edu<br><small>Email</small></p>
+    </li>
+    
+</ul>
+
+		</div>
+	</div>
+
+	
+<script>
+
+
+
+  document.getElementById('year').innerHTML = new Date().getFullYear();
+  
+</script>
+
+</body>
+
+</html>

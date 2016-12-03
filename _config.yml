@@ -1,0 +1,27 @@
+safe: false
+
+# build settings
+markdown: kramdown
+highlighter: rouge
+lsi: false
+permalink: /:title
+
+title: "Monika Mckeown"
+description: "Senior student in Computer Security / Imaging Science at RIT"
+baseurl: ""
+url: "http://monk1229.github.io/"
+github_username:  monk1229 # (your name)
+accent: "#fff8a9"
+
+author: "Monika Mckeown"
+address: "Rochester, NY"
+email: "mam1229@rit.edu"
+
+
+# language settings
+isolang: en
+
+# exclude files
+exclude:
+  - LICENSE
+  - README.md
